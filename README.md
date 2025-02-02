@@ -1,5 +1,7 @@
 # jscses 使用文档
 
+[![NPM](https://nodei.co/npm/jscses.png)](https://nodei.co/npm/jscses/)
+
 ## 1. 简介
 
 本NODE模块提供了 `CSESParser` 和 `CSESGenerator` 两个类，用于解析和生成 CSES 格式的 YAML 文件。CSES 格式为课表迁移统一格式。
