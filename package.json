@@ -1,6 +1,6 @@
 {
   "name": "jscses",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "CSES access framework for Node.JS",
   "main": "index.js",
   "scripts": {

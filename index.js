@@ -190,38 +190,3 @@ class CSESGenerator {
         }
     }
 }
-
-// 示例用法
-if (require && require.main === module) {
-    const args = process.argv.slice(2);
-    
-    if (args.length !== 1) {
-        console.log(`Check CSES File
-Usage: node index.js <cses_file>`);
-        process.exit(1);
-    }
-    
-    const filePath = args[0];
-    
-    if (!CSESParser.isCsesFile(filePath)) {
-        console.log("Not a valid CSES file");
-        process.exit(1);
-    }
-    
-    const parser = new CSESParser(filePath);
-    
-    console.log("All Subjects:");
-    for (const subject of parser.getSubjects()) {
-        console.log(`${subject.name} (${subject.simplified_name || ''})`);
-        console.log(`- Teacher: ${subject.teacher || ''}`);
-        console.log(`- Room: ${subject.room || ''}`);
-    }
-    
-    console.log("\nAll Schedules:");
-    for (const schedule of parser.getSchedules()) {
-        console.log(`${schedule.name} (${schedule.enable_day} ${schedule.weeks}):`);
-        for (const cls of schedule.classes) {
-            console.log(`- ${cls.subject} (${cls.start_time} - ${cls.end_time})`);
-        }
-    }
-}
