@@ -1,0 +1,34 @@
+{
+  "name": "cses-parser-generator",
+  "version": "1.0.0",
+  "description": "A parser and generator for CSES (Course Schedule and Subjects) YAML files",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "keywords": [
+    "CSES",
+    "parser",
+    "generator",
+    "schedule",
+    "subjects",
+    "yaml"
+  ],
+  "author": "PYLXU <e-pylxu@outlook.com>",
+  "license": "MIT",
+  "dependencies": {
+    "js-yaml": "^4.1.0"
+  },
+  "bin": {
+    "cses": "index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/cses-parser-generator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/cses-parser-generator/issues"
+  },
+  "homepage": "https://github.com/yourusername/cses-parser-generator#readme"
+}
