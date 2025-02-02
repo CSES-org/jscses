@@ -192,7 +192,7 @@ class CSESGenerator {
 }
 
 // 示例用法
-if (require.main && require.main === module) {
+if (require && require.main === module) {
     const args = process.argv.slice(2);
     
     if (args.length !== 1) {
