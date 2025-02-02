@@ -1,6 +1,6 @@
 {
   "name": "jscses",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "CSES access framework for Node.JS",
   "main": "index.js",
   "keywords": [
@@ -14,8 +14,7 @@
   "author": "PYLXU <e-pylxu@outlook.com>",
   "license": "MIT",
   "dependencies": {
-    "js-yaml": "^4.1.0",
-    "jscses": "^1.0.0"
+    "js-yaml": "^4.1.0"
   },
   "bin": {
     "cses": "index.js"
