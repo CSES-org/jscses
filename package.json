@@ -1,6 +1,6 @@
 {
   "name": "jscses",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "CSES access framework for Node.JS",
   "main": "index.js",
   "keywords": [
@@ -22,10 +22,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/PYLXU/jscses.git"
+    "url": "https://github.com/CSES-org/jscses.git"
   },
   "bugs": {
-    "url": "https://github.com/PYLXU/jscses/issues"
+    "url": "https://github.com/CSES-org/jscses"
   },
-  "homepage": "https://github.com/PYLXU/jscses#readme"
+  "homepage": "https://github.com/CSES-org/jscses#readme"
 }
