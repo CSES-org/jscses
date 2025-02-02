@@ -1,10 +1,9 @@
 {
-  "name": "cses-parser-generator",
+  "name": "jscses",
   "version": "1.0.0",
-  "description": "A parser and generator for CSES (Course Schedule and Subjects) YAML files",
+  "description": "CSES access framework for Node.JS",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js"
   },
   "keywords": [
@@ -25,10 +24,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/yourusername/cses-parser-generator.git"
+    "url": "https://github.com/PYLXU/jscses.git"
   },
   "bugs": {
-    "url": "https://github.com/yourusername/cses-parser-generator/issues"
+    "url": "https://github.com/PYLXU/jscses/issues"
   },
-  "homepage": "https://github.com/yourusername/cses-parser-generator#readme"
+  "homepage": "https://github.com/PYLXU/jscses#readme"
 }
