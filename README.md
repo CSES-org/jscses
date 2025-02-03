@@ -1,8 +1,7 @@
 # jscses 使用文档
 
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
-
-[![NPM](https://nodei.co/npm/jscses.png)](https://nodei.co/npm/jscses/)
+[![NPM](https://nodei.co/npm/jsc.png?mini=true)](https://nodei.co/npm/jsc/)
 
 ## 1. 简介
 
