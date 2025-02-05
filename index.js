@@ -143,8 +143,8 @@ class CSESGenerator {
     addSchedule(name, enableDay, weeks, classes) {
         /**
          * 添加课程安排
-         * @param {string} name - 课程安排名称（如 "星期一"）
-         * @param {string} enableDay - 课程安排的星期（如 'mon', 'tue' 等）
+         * @param {string} name - 课程安排名称（如 "Odd_Monday"）
+         * @param {string} enableDay - 课程安排的星期（如 '1', '2' 等）
          * @param {string} weeks - 周次类型（如 'all', 'odd', 'even'）
          * @param {Array} classes - 课程列表
          */
