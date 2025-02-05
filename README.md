@@ -45,8 +45,8 @@ const parser = new CSESParser(filePath);
 获取所有课程安排。
 
 返回值：返回一个数组，包含所有课程安排的信息，每个课程安排是一个对象，包含以下字段：
-- `name`：课程安排名称（如“星期一”）。
-- `enable_day`：课程安排的星期（如 'mon'、'tue' 等）。
+- `name`：课程安排名称（如“Odd_Monday”）。
+- `enable_day`：课程安排的星期（整数型，如 1、2 等）。
 - `weeks`：周次类型（如 'all'、'odd'、'even'）。
 - `classes`：课程列表，每个课程是一个对象，包含以下字段：
   - `subject`：科目名称。
@@ -58,7 +58,7 @@ const parser = new CSESParser(filePath);
 根据星期获取课程安排。
 
 参数：
-- `day`：星期（如 'mon'、'tue' 等）。
+- `day`：星期（整数型，如 1、2 等）。
 
 返回值：返回该星期的课程安排数组，每个课程是一个对象，包含以下字段：
 - `subject`：科目名称。
@@ -106,8 +106,8 @@ const generator = new CSESGenerator(version);
 添加课程安排。
 
 参数：
-- `name`：课程安排名称（如“星期一”）。
-- `enableDay`：课程安排的星期（如 'mon'、'tue' 等）。
+- `name`：课程安排名称（如“Odd_Monday”）。
+- `enableDay`：课程安排的星期（整数型，如 1、2 等）。
 - `weeks`：周次类型（如 'all'、'odd'、'even'）。
 - `classes`：课程列表，每个课程是一个对象，包含以下字段：
   - `subject`：科目名称。
@@ -142,7 +142,7 @@ try {
     const schedules = parser.getSchedules();
     console.log('Schedules:', schedules);
 
-    const mondaySchedule = parser.getScheduleByDay('mon');
+    const mondaySchedule = parser.getScheduleByDay(1);
     console.log('Monday Schedule:', mondaySchedule);
 } catch (error) {
     console.error('Error:', error.message);
@@ -161,7 +161,7 @@ generator.addSubject('Math', 'M', 'John Doe', 'Room 101');
 generator.addSubject('Science', 'Sci', 'Jane Smith', 'Room 102');
 
 // 添加课程安排
-generator.addSchedule('Monday', 'mon', 'all', [
+generator.addSchedule('Monday', 1, 'all', [
     { subject: 'Math', start_time: '09:00', end_time: '10:00' },
     { subject: 'Science', start_time: '10:00', end_time: '11:00' }
 ]);
