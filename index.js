@@ -87,7 +87,7 @@ class CSESParser {
     getScheduleByDay(day) {
         /**
          * 根据星期获取课程安排
-         * @param {string} day - 星期（如 'mon', 'tue' 等）
+         * @param {string} day - 星期（整数型，如 1, 2 等）
          * @returns {Array} 该星期的课程安排
          */
         const schedule = this.schedules.find(s => s.enable_day === day);
@@ -144,7 +144,7 @@ class CSESGenerator {
         /**
          * 添加课程安排
          * @param {string} name - 课程安排名称（如 "Odd_Monday"）
-         * @param {string} enableDay - 课程安排的星期（如 '1', '2' 等）
+         * @param {string} enableDay - 课程安排的星期（整数型，如 1, 2 等）
          * @param {string} weeks - 周次类型（如 'all', 'odd', 'even'）
          * @param {Array} classes - 课程列表
          */
